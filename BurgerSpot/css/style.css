@@ -1,0 +1,139 @@
+.body{
+  background-color: black;
+  margin:0;
+}
+.body1{
+  background-color: white;
+  margin:0;
+}
+.logo1{
+  font-family: 'Lobster', cursive;
+  font-size: 30px;
+  color:#f39b30;
+}
+.logo2{
+  font-family: 'Lobster', cursive;
+  font-size: 30px;
+  color:#d03d1d;
+}
+.navbar{
+  opacity: 0.90;
+}
+.navbar a{
+  margin-left: 20px;
+  font-weight: bold;
+
+}
+.navbar a:hover{
+  margin-left: 20px;
+  margin-top:0px;
+  margin-bottom: 0px;
+  border:0px;
+  font-weight: bold;
+  color:red;
+}
+
+
+#dropitem
+{
+  margin-left: 0px;
+  color:black;
+  font-weight: normal;
+}
+
+#dropitem2
+{
+  margin-left: 0px;
+  color:red;
+  font-weight: normal;
+}
+
+#dropitem2:hover
+{
+  margin-left: 0px;
+  color:white;
+  font-weight: normal;
+  background-color: #800000
+}
+header{
+  padding-top: 70px;
+}
+
+label{
+  font-weight: bold;
+
+}
+
+.linka1{
+  text-decoration:none;
+  color:#ff5100;
+}
+
+.linka1:hover{
+  text-decoration:none;
+  color:#000717;
+}
+
+.linka2{
+  text-decoration:none;
+  color:#ad2300;
+}
+
+.linka2:hover{
+  text-decoration:none;
+  color:#262420;
+}
+input[type=text] {
+  border: none;
+  border-bottom: 2px solid red;
+}
+input[type=password] {
+  border: none;
+  border-bottom: 2px solid red;
+}
+input[type="password"]::placeholder{
+  text-align:center;
+}
+input[type="text"]::placeholder{
+  text-align:center;
+}
+input[type=email] {
+  border: none;
+  border-bottom: 2px solid red;
+}
+input[type=date] {
+  border: none;
+  border-bottom: 2px solid red;
+}
+input[type=time] {
+  border: none;
+  border-bottom: 2px solid red;
+}
+
+input{
+  text-align:center;
+}
+
+.footer {
+  font-style: italic;
+  font-size: 12px;
+  font-family: cursive;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding-top:10px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.contact{
+  color:white;
+  font-size: 15px;
+
+}
+
+.contact a{
+  color:#c98702;
+}

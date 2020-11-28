@@ -27,10 +27,16 @@ function newAccount(){
         return
       }
     }
+    if(agree_terms.checked==0)
+    {
+      alert("Please accept terms and condition to Register")
+      return
+    }
 
     if(password == confirm_password)
     {
       creditials.push({username,email,password})
+      $('#newform').modal('hide');
       return
     }
     else{
@@ -47,18 +53,30 @@ function validateAccount(){
   console.log(creditials)
   var username=document.getElementById("valid_username").value
   var password=document.getElementById("valid_password").value
-  for(k in creditials)
-  {
-    if(username==creditials[k].username || username==creditials[k].email)
+  if(username!=="" && password!==""){
+    for(k in creditials)
     {
-      if(password!==creditials[k].password)
+      if(username==creditials[k].username || username==creditials[k].email)
       {
-        alert("Invalid Password ! Try Again")
+        if(password!==creditials[k].password)
+        {
+          alert("Invalid Password ! Try Again")
+          return
+        }
+        $('#loginform').modal('hide');
         return
       }
+    }
+        alert("Invalid Username !  please sign-up")
+        return
+    }
+    else {
+      alert("Please Enter Username and password")
       return
     }
-  }
-      alert("Invalid Username !  please sign-up")
-      return
+}
+
+function table_booked(){
+  swal("Hurray!", "Your Table is now Reserved !", "success")
+  return
 }
